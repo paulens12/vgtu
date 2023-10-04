@@ -12,7 +12,7 @@ k = [100; 100];
 % nepriklausomos.
 P = [10 0; 0 10];
 
-for i = 1 : 5
+for i = 1 : length(testData)
     % atnaujiname svertini vektoriu: K = P * f / (f^T * P * f + 1)
     % feat yra vektorius is eksperimentines f reiksmes (koeficientas prie k1)
     % ir 1 (koeficientas prie k2)
@@ -27,5 +27,5 @@ for i = 1 : 5
     k = k + P * feat * (c - c_pred)
     
     % atnaujinam klaidu kovariacijos matrica
-    P = P - K * feat.' * P
+    P = P - K * feat.' * P;
 end
