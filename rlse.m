@@ -19,7 +19,7 @@ for i = 1 : length(testData)
     c = testData(i, 1);
     f = testData(i, 2);
     a = [f; 1];
-    K = P * a / (a.' * P * a + 1)
+    K = P * a / (a.' * P * a + 1);
     
     % atnaujinam koeficientus pagal gauta paklaida
     % nuspejama c reiksme pagal formule naudojant dabartines k1, k2
