@@ -1,3 +1,5 @@
+clear;
+
 % eksperimentiniai duomenis, pagal kuriuos bus tikslinama formule
 testData = [13 55; 14 58; 17 63; 18 65; 19 66; 15 59; 13 56; 31 87; 32 90; 29 85; 27 81];
 % pradiniai parametrai formulei: c = k1 * f + k2
